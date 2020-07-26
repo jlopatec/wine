@@ -20,6 +20,10 @@ jobs:
           ls
           echo "CAT MODEL METRICS JL"
           cat metrics.txt >> report.md
+          echo "results into report.md"
+          echo "## Data Viz"
+          cml-publish feature_importance.png --md >> report.md
+          cml-publish residuals.png --md >> report.md
           echo "metrics into report.md"
           cml-send-comment report.md
-          echo "results into report.md"
+
