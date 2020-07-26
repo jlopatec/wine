@@ -19,7 +19,7 @@ jobs:
           # Write your CML report
           ls
           echo "MODEL METRICS JL"
-          cat results.txt >> report.md
-          echo "results into report.md"
+          cat metrics.txt >> report.md
+          echo "metrics into report.md"
           cml-send-comment report.md
           echo "results into report.md"
