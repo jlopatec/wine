@@ -16,6 +16,7 @@ jobs:
           python train.py > jl.test
           echo "cat jl.test"
           cat jl.test
+          ls -la
           # Write your CML report
           echo "MODEL METRICS JL"
           cat results.txt >> report.md
