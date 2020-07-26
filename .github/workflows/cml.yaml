@@ -12,8 +12,9 @@ jobs:
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt
-          echo "Running Train"
+          echo "Running Train out to jl.test"
           python train.py > jl.test
+          echo "cat jl.test"
           cat jl.test
           # Write your CML report
           echo "MODEL METRICS JL"
